@@ -1,0 +1,44 @@
+/* Contact Us Section */
+.contact_us .contact_content {
+  margin-top: 5rem;
+}
+
+.contact_us .contact_header {
+  font-size: 7vw;
+}
+@media (max-width: 767px) {
+  .contact_us .contact_header {
+    font-size: 53px;
+  }
+}
+
+.contact_us form label {
+  color: #c9aa89;
+}
+.contact_us form input {
+  background: transparent;
+  color: var(--primary-color);
+}
+.contact_us form input:focus {
+  background: transparent;
+  box-shadow: none;
+  color: var(--primary-color);
+}
+.contact_us form textarea {
+  background: transparent;
+  color: var(--primary-color);
+}
+.contact_us form textarea:focus {
+  background: transparent;
+  box-shadow: none;
+  color: var(--primary-color);
+}
+.contact_us form .btn {
+  background: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+.contact_us form .btn:hover {
+  background: var(--secondary-color);
+  color: var(--primary-color);
+}

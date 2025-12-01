@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!-- Contact Us -->
+    <section class="contact_us container pb-lg-2 pb-xl-4 py-xxl-5 my-5">
+      <div class="row pb-1 pb-sm-3 pb-lg-4">
+        <div class="contact_content col-lg-4 pe-xxl-4">
+          <!-- Page title -->
+          <h1 class="contact_header">تواصل معنا!</h1>
+          <p class="fs-lg mb-0 mb-2">
+            اترك رسالة وسنقوم بالرد على جميع استفساراتك
+          </p>
+        </div>
+        <div class="col-lg-8 col-xl-7 offset-xl-1">
+          <!-- Contact form -->
+          <form id="contactForm" action="send-email.php" method="get">
+            <div class="col-sm-12">
+              <label class="form-label fs-base" for="name">الاسم</label>
+              <input
+                name="name"
+                class="form-control form-control-lg"
+                type="text"
+                placeholder="اسمك"
+                required=""
+                id="name"
+              />
+              <div class="invalid-feedback">الرجاء إدخال الاسم!</div>
+            </div>
+            <div class="col-sm-6">
+              <label class="form-label fs-base" for="phone">رقم الهاتف</label>
+              <input
+                name="phone"
+                class="form-control form-control-lg"
+                type="text"
+                placeholder="رقم الهاتف"
+                id="phone"
+              />
+            </div>
+            <div class="col-sm-12">
+              <label class="form-label fs-base" for="message"
+                >كيف يمكننا مساعدتك؟</label
+              >
+              <textarea
+                name="message"
+                class="form-control form-control-lg"
+                rows="5"
+                placeholder="اكتب رسالتك هنا..."
+                required=""
+                id="message"
+              ></textarea>
+              <div class="invalid-feedback">الرجاء كتابة الرسالة!</div>
+            </div>
+            <div class="col-sm-12 pt-2">
+              <input class="btn" type="submit" value="احجز" />
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
